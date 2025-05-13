@@ -2,6 +2,7 @@
 
 Playbook Ansible:
 
+```
 - name: Installation docker sur Debian
   hosts: all
   become: true
@@ -19,11 +20,11 @@ Playbook Ansible:
       apt:
         name: gnupg
         state: present
-
-
+```
 
 Docker Compose :
 
+```
 services:
   db:
     image: mariadb
@@ -54,4 +55,4 @@ services:
 volumes:
   db_data:
   wp_data:
-
+```
